@@ -1,8 +1,8 @@
 export const chunk = (array, size) => {
-  if (!size) {
-    return null;
-  }
   if (array instanceof Array && typeof size === "number") {
+    if (!size) {
+      return null;
+    }
     if (array.length <= size) {
       return [array];
     }
