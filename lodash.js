@@ -14,3 +14,14 @@ export const chunk = (array, size) => {
     throw new Error("should be an Array and number");
   }
 };
+
+export const compact = (array) =>
+  array.filter(
+    (el) =>
+      el !== null &&
+      el !== "undefined" &&
+      el !== 0 &&
+      el !== false &&
+      el !== NaN &&
+      el !== ""
+  );
