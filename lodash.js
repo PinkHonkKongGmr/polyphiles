@@ -31,3 +31,6 @@ export const _concat = (...args) =>
     (arr, cur) => (cur instanceof Array ? [...arr, ...cur] : [...arr, cur]),
     []
   );
+
+export const difference = (array, toCompare) =>
+  array.filter((el) => !toCompare.some((elem) => el === elem));
