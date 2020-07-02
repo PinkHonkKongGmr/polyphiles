@@ -25,3 +25,10 @@ export const compact = (array) =>
       el !== NaN &&
       el !== ""
   );
+
+export const _concat = (...args) =>
+  args.reduce(
+    (arr, cur) => (cur instanceof Array ? [...arr, ...cur] : [...arr, cur]),
+    []
+  );
+const array = [0, 2];
