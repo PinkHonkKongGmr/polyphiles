@@ -31,4 +31,3 @@ export const _concat = (...args) =>
     (arr, cur) => (cur instanceof Array ? [...arr, ...cur] : [...arr, cur]),
     []
   );
-const array = [0, 2];
